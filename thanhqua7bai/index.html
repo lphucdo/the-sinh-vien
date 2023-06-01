@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://toquoc.mediacdn.vn/zoom/600_315/280518851207290880/2022/12/10/lionel-messi-argentina-qatar-2022-world-cup-mundial-120922-1-16706520059201318087003-0-34-427-717-crop-16706522967521700477658.jpg" type="image/x-icon">
 </head>
 <body>
     <section class="hideandunhide">
@@ -53,7 +54,7 @@
         </div>
         
     </section>
-    <div class="error-width" onload="change()">
+    <div class="error-width">
         <p>Hãy sử dụng PC/Laptop để xem sản phẩm</p>
     </div>
 </body>
@@ -90,8 +91,23 @@
         
     }
 
-    function change() {
-        alert("Sang Pc hoặc laptop dùng đi. Cái này mệt lắm! :)")
-    }
 </script>
+<script>
+    function checkMobile() {
+      return window.innerWidth <= 1200;
+    }
+  
+    function toggleUnavailableMessage() {
+      var unavailableMessage = document.querySelector('.error-width');
+      if (checkMobile()) {
+        unavailableMessage.style.display = 'flex';
+      } else {
+        unavailableMessage.style.display = 'none';
+      }
+    }
+
+    window.onload = toggleUnavailableMessage;
+    window.onresize = toggleUnavailableMessage;
+  </script>
+  
 </html>
