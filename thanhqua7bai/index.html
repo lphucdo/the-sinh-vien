@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hideandunhide">
+        <Button onclick="hide()">Click Here</Button>
+    </section>
+    <section class="container">
+        <h1 class="heading hide">Yasuo</h1>
+        <p class="des hide ">Kẻ bất dung thứ.</p>
+        <section class="photo hide">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="" class="photo-img">
+            <img src="https://i.ex-cdn.com/mgn.vn/files/news/2022/08/18/lmht-top-5-trang-phuc-dep-nhat-cua-quoc-tuong-yasuo-131525.jpg" alt="" class="photo-img">
+            <img src="https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/yasuo-toc-chien2.jpeg" alt="" class="photo-img">
+            <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/02/hinh-nen-yasuo-4k-cho-pc.jpg?ssl\u003d1" alt="" class="photo-img">
+            <img src="https://i.pinimg.com/originals/56/3a/56/563a56b106ea38b20d29c33a0cfe184d.jpg" alt="" class="photo-img">
+            <img src="https://cdn.tgdd.vn/2020/06/content/cach-choi-yasuo-mua-10-bang-ngoc-trang-bi-combo-chuan-nhat-thumb-800x450-1.jpg" alt="" class="photo-img">
+            <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/02/hinh-nen-yasuo-ma-kiem-mau-tim-hong-cho-may-tinh.jpg?ssl\\u003d1" alt="" class="photo-img">
+            <img src="https://symbols.vn/wp-content/uploads/2022/08/Hinh-tuong-Yasuo-Ma-Quy-Kiem.jpg" alt="" class="photo-img">
+            <img src="https://cdn.tgdd.vn/2020/07/content/bo-anh-yasuo-lol-dep-va-chat-de-lam-hinh-nen-dien-thoai-may4-800x450.jpg" alt="" class="photo-img">
+        </section>
+
+        <!-- Không -->
+        <div class="card">
+            <section class="info">
+                <h4 class="info-name">HỌC VIỆN NÔNG NGHIỆP VIỆT NAM</h3>
+                <p class="info-name-eng">VIETNAM NATIONAL UNIVERSITY OF AGRICULTURE</p>
+            </section>
+            <section class="thongtin">
+                <section class="img">
+                    <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-1/339406209_771721294568432_2291471958081071665_n.jpg?stp=c0.0.160.160a_dst-jpg_p160x160&_nc_cat=102&ccb=1-7&_nc_sid=7206a8&_nc_ohc=PQrpzgJ8qNYAX9RpIJP&_nc_oc=AQmrerUVfjKgLv7LiMdoT7k38-f4Vz1Ht320J_zLsp9e8AYKVWdtAt_x7EX2kPnGUXw&_nc_ht=scontent.fhan5-2.fna&oh=00_AfCVcbInVGURKofFG9D02f022pVtSUFvNBe9JMgnYMytKw&oe=6479E649" alt="" class="card-img">
+                    <h5 class="card-code">Mã SV: 671598</h5>
+                </section>
+                <section class="my-info">
+                    <h3 class="card-name-name">THẺ SINH VIÊN</h3>
+                    <p class="card-name">
+                        Họ tên: <strong>Đỗ Phúc Lâm</strong> 
+                    </p>
+                    <p class="card-age">
+                        Ngày sinh: <strong>29/09/2004</strong> 
+                    </p>
+                    <p class="card-class">Lớp: <strong>K67CNTTE</strong></p>
+                    <p class="card-year">Hạn sử dụng: <strong>2022-2026</strong></p>
+                    <img class="qr-code" src="data:image/png;base64,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" alt="">
+                </section>
+    
+            </section>
+        </div>
+        
+    </section>
+    <div class="error-width" onload="change()">
+        <p>Hãy sử dụng PC/Laptop để xem sản phẩm</p>
+    </div>
+</body>
+
+<script>
+    var onhide = true;
+    console.log(!onhide);
+
+
+    function hide() {
+        var heading = document.querySelector(".heading");
+        var des = document.querySelector(".des");
+        var yasuo = document.querySelector(".photo");
+
+        if(!onhide){
+            yasuo.classList.add("hide");
+            des.classList.add("hide");
+            heading.classList.add("hide");
+
+            onhide = true;
+
+
+        }else{
+            
+            yasuo.classList.remove("hide");
+            des.classList.remove("hide");
+            heading.classList.remove("hide");
+
+            onhide = false;
+
+            
+        }
+
+        
+    }
+
+    function change() {
+        alert("Sang Pc hoặc laptop dùng đi. Cái này mệt lắm! :)")
+    }
+</script>
+</html>

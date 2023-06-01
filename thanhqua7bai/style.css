@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 2000px;
+}
+.container{
+    display: flex;
+    height: 700px;
+    width: 1350px;
+    flex-direction: column;
+    margin: 15px 0;
+}   
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+.des{
+    text-align: center;
+    color: rgb(94, 90, 90);
+
+}
+
+.photo-img{
+    width: 410px;
+    height: 253px;
+    margin: 15px;
+}
+/* Card */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+
+    background-color: rgb(19, 90, 22);
+
+}
+.info-name{
+    color: white;
+    letter-spacing: 1px;
+
+}
+.info-name-eng{
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
+.thongtin{
+    display: flex;
+}
+.card{
+    position: relative;
+    top: 100px;
+    left: 35%;
+    display: flex;
+    width: 410px;
+    height: 253px;
+    flex-direction: column;
+    border: #333 solid 2px;
+    border-radius: 3px;
+    
+}
+.card-img{
+    margin: 5px 0 5px 5px;
+    border-radius: 5px;
+
+}
+.card-code{
+    text-align: center;
+}
+
+.my-info{
+    margin: 10px 0 0px 15px ;
+}
+.card-name-name{
+    text-align: center;
+    color: red;
+}
+.card-name{
+    margin: 10px 0 3px 0 ;
+}
+
+.card-class{
+    margin: 3px 0;
+}
+
+.qr-code{
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.hide {
+    display: none;
+}
+.hideandunhide{
+    position: relative;
+    top: 2%;
+    left: 0;
+    border: none;
+}
+.hideandunhide button{
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 1300px){
+    .container, .hideandunhide{
+        display: none;
+    }
+}
+@media (min-width: 800px){
+    
+    .error-width{
+        display: none;
+    }
+    
+}
+
+/* error css*/
+
+.error-width{
+    position: relative;
+    display: none;
+    top: 5%;
+    justify-content: center;
+    align-items: center;
+    border: #333 solid 2px;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+.error-width p{
+    color: aliceblue;
+}
