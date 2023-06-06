@@ -68,8 +68,9 @@ body{
     
 }
 .card-img{
-    margin: 5px 0 5px 5px;
-    border-radius: 5px;
+    margin: 10px 0 10px 10px;
+    border-radius: 2px;
+    width: 120px;
 
 }
 .card-code{
